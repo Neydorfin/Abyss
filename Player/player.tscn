@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://Player/player.gd" id="1_muj1f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a3i8p"]
-radius = 17.0
-height = 66.0
+radius = 2.32454
+height = 153.655
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hpds6"]
 animations = [{
@@ -19,12 +19,15 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(238, 112)
 script = ExtResource("1_muj1f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 2)
+scale = Vector2(4.73212, 0.377469)
 shape = SubResource("CapsuleShape2D_a3i8p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, 0)
+position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_hpds6")
 animation = &"Idle"
