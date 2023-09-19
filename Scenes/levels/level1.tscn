@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://hmy5e3x1nisa"]
+
+[ext_resource type="PackedScene" uid="uid://bpnbif53snhmw" path="res://Scenes/levels/level-tile-map-start.tscn" id="1_m8oru"]
+[ext_resource type="PackedScene" uid="uid://b1dd81dg265hp" path="res://Scenes/levels/level-tile-map-1.tscn" id="2_8q3q5"]
+[ext_resource type="PackedScene" uid="uid://dm1xbaghbrne2" path="res://Scenes/levels/level-tile-map-2.tscn" id="3_d63l2"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="start" parent="." instance=ExtResource("1_m8oru")]
+
+[node name="start2" parent="." instance=ExtResource("2_8q3q5")]
+position = Vector2(0, 128)
+
+[node name="start3" parent="." instance=ExtResource("3_d63l2")]
+position = Vector2(128, 128)
