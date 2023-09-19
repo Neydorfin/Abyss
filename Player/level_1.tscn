@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://frcrttwaycjp"]
 
 [ext_resource type="PackedScene" uid="uid://wf8sclb1kc3w" path="res://Player/player.tscn" id="1_3ye5l"]
+
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_o5num"]
 
 [node name="level1" type="Node2D"]
@@ -20,3 +21,4 @@ layer_1/tile_data = PackedInt32Array(393217, 524288, 0, 393218, 524288, 0, 39321
 
 [node name="Player" parent="." instance=ExtResource("1_3ye5l")]
 position = Vector2(44, 40)
+
