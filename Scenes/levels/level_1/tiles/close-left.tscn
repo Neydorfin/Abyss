@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bf6h0ywry4ana"]
+[gd_scene load_steps=3 format=3 uid="uid://bf6h0ywry4ana"]
 
+[ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_abmxi"]
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_foket"]
 
 [node name="close-left" type="Node2D"]
+script = ExtResource("1_abmxi")
+Enter = "right"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_foket")

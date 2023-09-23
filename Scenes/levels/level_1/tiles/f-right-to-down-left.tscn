@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c82uy2f2ryvup"]
+[gd_scene load_steps=3 format=3 uid="uid://c82uy2f2ryvup"]
 
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_dqtjm"]
+[ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_jkk8w"]
 
 [node name="f-right-to-down-left" type="Node2D"]
+script = ExtResource("1_jkk8w")
+Enter = "right"
+has_ext = true
+_Exits = Array[String](["left", "down"])
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_dqtjm")

@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbr46b4d7dg7e"]
+[gd_scene load_steps=3 format=3 uid="uid://bbr46b4d7dg7e"]
 
+[ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_40nag"]
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_dq6fn"]
 
 [node name="close-down" type="Node2D"]
-metadata/Enter = "up"
-metadata/has_exit = false
-metadata/Exits = []
+script = ExtResource("1_40nag")
+Enter = "up"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_dq6fn")

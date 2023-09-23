@@ -1,11 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo20boolyaip3"]
+[gd_scene load_steps=3 format=3 uid="uid://bo20boolyaip3"]
 
+[ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_i3687"]
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_iwm20"]
 
 [node name="start" type="Node2D"]
-metadata/Enter = "up"
-metadata/has_exit = true
-metadata/Exits = ["right", "left", "down"]
+script = ExtResource("1_i3687")
+Enter = "up"
+_Exits = Array[String](["right", "left", "down"])
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_iwm20")
