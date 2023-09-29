@@ -2,7 +2,6 @@ extends Node2D
 
 const start: String = "res://Scenes/levels/level_1/tiles/start.tscn"
 
-
 func generate():
 
 	var start_scene = load(start).instantiate()

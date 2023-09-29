@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://csq2ipsku2luh"]
+[gd_scene load_steps=4 format=3 uid="uid://csq2ipsku2luh"]
 
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_cdqot"]
 [ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_x50uh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hsa1a"]
+size = Vector2(254, 254)
 
 [node name="f-up-to-left-right-down" type="Node2D"]
 script = ExtResource("1_x50uh")
@@ -21,3 +24,9 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(7, 196608, 7, 65543, 196608, 7, 131079, 196608, 7, 196615, 196608, 7, 262151, 196608, 7, 196616, 196608, 7, 131081, 196608, 7, 196614, 196608, 7, 131077, 196608, 7, 983047, 196608, 7, 917511, 196608, 7, 851975, 196608, 7, 786439, 196608, 7, 720903, 196608, 7, 917512, 196608, 7, 851977, 196608, 7, 917510, 196608, 7, 851973, 196608, 7, 524288, 196608, 7, 524289, 196608, 7, 524290, 196608, 7, 524291, 196608, 7, 524292, 196608, 7, 524293, 196608, 7, 589825, 196608, 7, 655362, 196608, 7, 458753, 196608, 7, 393218, 196608, 7, 524298, 196608, 7, 524299, 196608, 7, 524300, 196608, 7, 524301, 196608, 7, 524302, 196608, 7, 524303, 196608, 7, 458766, 196608, 7, 393229, 196608, 7, 589838, 196608, 7, 655373, 196608, 7)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(128, 128)
+shape = SubResource("RectangleShape2D_hsa1a")

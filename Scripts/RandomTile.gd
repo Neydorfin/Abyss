@@ -2,6 +2,7 @@ class_name RandomTile extends Node2D
 
 
 var total_tile: int 
+var max_tile: int = 20
 
 func _init():
 	total_tile = 0
@@ -41,23 +42,24 @@ const f_up: Array[String] = [
 ]
 
 
+
 var close_scenes: Array[PackedScene] = load_scenes(close)
 var f_left_scenes: Array[PackedScene] = load_scenes(f_left)
 var f_right_scenes: Array[PackedScene] = load_scenes(f_right)
 var f_up_scenes: Array[PackedScene] = load_scenes(f_up)
 
 func get_left():
-	if TileManager.total_tile > 20:
+	if TileManager.total_tile > max_tile:
 		return close_scenes[2].instantiate()
 	return f_left_scenes[randi_range(0, len(f_left_scenes)-1)].instantiate()
 
 
 func get_right():
-	if TileManager.total_tile > 20:
+	if TileManager.total_tile > max_tile:
 		return close_scenes[1].instantiate()
 	return f_right_scenes[randi_range(0, len(f_right_scenes)-1)].instantiate()
 	
 func get_down():
-	if TileManager.total_tile > 20:
+	if TileManager.total_tile > max_tile:
 		return close_scenes[0].instantiate()
 	return f_up_scenes[randi_range(0, len(f_up_scenes)-1)].instantiate()

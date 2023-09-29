@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cu6vbb1mfychv"]
+[gd_scene load_steps=4 format=3 uid="uid://cu6vbb1mfychv"]
 
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_as2rb"]
 [ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_yih8b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo2na"]
+size = Vector2(254, 254)
 
 [node name="f-up-to-right-down" type="Node2D"]
 script = ExtResource("1_yih8b")
@@ -21,3 +24,9 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(0, 589824, 1, 65536, 786432, 1, 917504, 786432, 1, 983040, 786432, 1, 851968, 786432, 1, 786432, 786432, 1, 720896, 786432, 1, 655360, 786432, 1, 589824, 786432, 1, 524288, 786432, 1, 458752, 786432, 1, 393216, 786432, 1, 327680, 786432, 1, 262144, 786432, 1, 196608, 786432, 1, 131072, 786432, 1)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(128, 128)
+shape = SubResource("RectangleShape2D_qo2na")
