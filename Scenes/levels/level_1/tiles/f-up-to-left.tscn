@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_0ow4g"]
 [ext_resource type="Script" path="res://Scripts/node_metadata.gd" id="1_yxdqq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3g1n"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lbrj"]
 size = Vector2(254, 254)
 
 [node name="f-up-to-left" type="Node2D"]
@@ -26,7 +26,9 @@ layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(983040, 524288, 0, 983041, 524288, 0, 983042, 524288, 0, 983043, 524288, 0, 983044, 524288, 0, 983045, 524288, 0, 983046, 524288, 0, 983047, 524288, 0, 983048, 524288, 0, 983049, 524288, 0, 983050, 524288, 0, 983051, 524288, 0, 983052, 524288, 0, 983053, 524288, 0, 983054, 524288, 0, 983055, 524288, 0, 15, 524288, 1, 65551, 655360, 1, 131087, 655360, 1, 196623, 655360, 1, 262159, 655360, 1, 327695, 655360, 1, 393231, 655360, 1, 458767, 655360, 1, 524303, 655360, 1, 589839, 655360, 1, 655375, 655360, 1, 720911, 655360, 1, 786447, 655360, 1, 851983, 655360, 1, 917519, 655360, 1)
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 128
+collision_mask = 128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(128, 128)
-shape = SubResource("RectangleShape2D_h3g1n")
+shape = SubResource("RectangleShape2D_3lbrj")

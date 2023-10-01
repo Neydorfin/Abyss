@@ -49,5 +49,6 @@ func generate():
 func _on_area_2d_area_entered(_area):
 	var parent = get_parent()
 	var node = self
-	parent.remove_child(node)
+	if is_instance_of(node, Node_MD):
+		parent.remove_child(node)
 	
