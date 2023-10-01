@@ -4,7 +4,6 @@
 [ext_resource type="Script" path="res://Scenes/levels/level_1/Camera2D.gd" id="2_rbh12"]
 
 [node name="level1" type="Node2D"]
-scale = Vector2(0.5, 0.5)
 script = ExtResource("1_c6au4")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -11,6 +11,12 @@ script = ExtResource("1_i3687")
 Enter = "up"
 _Exits = Array[String](["right", "left", "down"])
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(128, 128)
+shape = SubResource("RectangleShape2D_2rjf4")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_iwm20")
 format = 2
@@ -23,9 +29,3 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(0, 524288, 0, 1, 524288, 0, 2, 524288, 0, 3, 524288, 0, 4, 524288, 0, 11, 524288, 0, 12, 524288, 0, 13, 524288, 0, 14, 524288, 0, 15, 524288, 0)
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(128, 128)
-shape = SubResource("RectangleShape2D_2rjf4")

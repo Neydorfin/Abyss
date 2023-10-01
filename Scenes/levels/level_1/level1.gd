@@ -3,7 +3,6 @@ extends Node2D
 const start: String = "res://Scenes/levels/level_1/tiles/start.tscn"
 
 func generate():
-
 	var start_scene = load(start).instantiate()
 	
 	var Generate_tree = GenerateTree.new(start_scene)
@@ -15,7 +14,8 @@ func generate():
 func _ready():
 	var TileManager = get_node("/root/TileManager")
 	generate()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass

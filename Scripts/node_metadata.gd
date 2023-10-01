@@ -20,19 +20,16 @@ func set_left(data):
 	left.position.x -= 256
 	add_child(left)
 	
-		
 func set_right(data):
 	right = data
 	right.position.x += 256
 	add_child(right)
 
-	
 func set_down(data):
 	down = data
 	down.position.y += 256
 	add_child(down)
 
-		
 func generate():
 	print(self, Enter, get_exits())
 	if !get_exits():
@@ -49,8 +46,7 @@ func generate():
 			set_down(TileManager.get_down())
 			down.generate()
 	
-	
-func _on_area_2d_area_entered(area):
+func _on_area_2d_area_entered(_area):
 	var parent = get_parent()
 	var node = self
 	parent.remove_child(node)
