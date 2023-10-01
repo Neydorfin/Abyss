@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf5emjjogxn8o"
-path="res://.godot/imported/player.png-b12d81cacd41edd115dbd315254b5ad9.ctex"
+uid="uid://dwbe68lbp6u6e"
+path="res://.godot/imported/Walk-Base-Sheet-White.png-ceb6fd03fe8332dc41c98ea654783d9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/player.png"
-dest_files=["res://.godot/imported/player.png-b12d81cacd41edd115dbd315254b5ad9.ctex"]
+source_file="res://Sprites/Boar/Walk/Walk-Base-Sheet-White.png"
+dest_files=["res://.godot/imported/Walk-Base-Sheet-White.png-ceb6fd03fe8332dc41c98ea654783d9b.ctex"]
 
 [params]
 
