@@ -10,3 +10,4 @@ func _process(delta):
 		global_position += Vector2.UP * delta * MOVE_SPEED
 	elif Input.is_action_pressed('ui_down'):
 		global_position += Vector2.DOWN * delta * MOVE_SPEED
+ 

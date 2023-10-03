@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://frcrttwaycjp"]
 
 [ext_resource type="PackedScene" uid="uid://wf8sclb1kc3w" path="res://Player/player.tscn" id="1_3ye5l"]
-[ext_resource type="TileSet" uid="uid://ca121y3xx3ct0" path="res://Sprites/sheet-tile-set.tres" id="1_o5num"]
+[ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_o5num"]
 [ext_resource type="PackedScene" uid="uid://dhgydr04xeuqb" path="res://Boar/boar.tscn" id="3_vyptb"]
 
 [node name="level1" type="Node2D"]
