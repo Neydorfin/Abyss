@@ -261,7 +261,7 @@ shape = SubResource("CapsuleShape2D_4trap")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -3)
 sprite_frames = SubResource("SpriteFrames_hpds6")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
