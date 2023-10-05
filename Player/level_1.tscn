@@ -4,7 +4,7 @@
 [ext_resource type="TileSet" uid="uid://c1bspxdsbyugp" path="res://Sprites/sheet-tile-set.tres" id="1_o5num"]
 [ext_resource type="PackedScene" uid="uid://dhgydr04xeuqb" path="res://Boar/boar.tscn" id="3_vyptb"]
 
-[node name="level1" type="Node2D"]
+[node name="Start_game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 0)
