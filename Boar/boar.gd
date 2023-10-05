@@ -11,8 +11,11 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	var player = $Player	
-	var  direction = (player.position - self.position).normalized()
+	var player = get_node("/root/Start_game/Player/Player")
+	var  direction = (player.global_position - self.global_position).normalized()
+	print("Boar-position :", self.global_position)
+	print("Player-position :", player.global_position)
+	print("Boar-direction :", direction)
 	if alive == true:
 		if chase == true:
 			velocity.x = direction.x * speed

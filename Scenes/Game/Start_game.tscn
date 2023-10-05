@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgkmshdiu7o1d"]
+
+[sub_resource type="GDScript" id="GDScript_1v5fx"]
+script/source = "extends Node2D
+
+
+func get_mobs(level):
+	pass
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var Level1 = load(\"res://Scenes/levels/level_1/level1.tscn\").instantiate()
+	$Level.add_child(Level1)
+	var Player = load(\"res://Player/player.tscn\").instantiate()
+	$Player.add_child(Player)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Start_game" type="Node2D"]
+script = SubResource("GDScript_1v5fx")
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="Player" type="Node2D" parent="."]
