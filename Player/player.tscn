@@ -246,7 +246,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4trap"]
 radius = 11.0
-height = 48.0
+height = 50.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_injj5"]
 size = Vector2(40.5, 29)
@@ -268,7 +268,7 @@ position_smoothing_enabled = true
 drag_horizontal_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -3)
+position = Vector2(-1, -4)
 shape = SubResource("CapsuleShape2D_4trap")
 
 [node name="Area2D" type="Area2D" parent="."]
